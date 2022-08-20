@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000
+@resource = products
+
+### List
+
+GET {{baseUrl}}/{{resource}}
+content-type: application/json
+
+### Create
+
+POST {{baseUrl}}/{{resource}}
+content-type: application/json
+
+{
+  "name": "Camiseta M",
+  "description": "Descrição da camiseta M"
+}
+
+### Show
+
+GET {{baseUrl}}/{{resource}}/f43a4d45-0e37-436f-a693-1ac6ce549904
+content-type: application/json
+
+### Update
+
+PUT {{baseUrl}}/{{resource}}/f43a4d45-0e37-436f-a693-1ac6ce549904
+content-type: application/json
+
+{
+  "name": "Camiseta M"
+}
+
+### Delete
+
+DELETE  {{baseUrl}}/{{resource}}/f43a4d45-0e37-436f-a693-1ac6ce549904
+content-type: application/json

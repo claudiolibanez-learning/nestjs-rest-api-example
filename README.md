@@ -1,0 +1,1 @@
+$ docker run --name postgresql -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=docker -p 5432:5432 -d postgres
